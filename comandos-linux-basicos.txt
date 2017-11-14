@@ -1,0 +1,74 @@
+Segue a expressividade básica de alguns comandos:
+
+[ CRIAR DIRETÓRIO ]
+
+  mkdir <nome-do-diretorio>     -->   cria o diretório fornecido como parâmetro 
+                                      Exemplo: "mkdir docs"
+
+[ CRIAR ARQUIVO VAZIO ]
+
+  touch <nome-do-arquivo>       -->   cria o arquivo fornecido como parâmetro
+                                      Exemplo: "touch aula1.txt"
+
+[ EXIBIR CONTEÚDO DE ARQUIVO ]
+  
+  cat <nome-do-arquivo>         -->   exibir conteúdo de um arquivo
+                                      Exemplo: "cat aula1.txt"
+                                      
+
+[ EXIBIR DIRETÓRIO CORRENTE ]
+
+  pwd     -->  exibe a pasta corrente a partir da qual o comando foi executado
+
+
+[ LIMPAR TELA ]
+
+  clear   -->  limpa tela do terminal
+
+[ LISTAR CONTEÚDO ]
+
+  ln      -->  lista conteúdo do diretório corrente
+  ln -l   -->  lista conteúdo do diretório corrente (organizado por linha)
+  ln -a   -->  lista todo (all) conteúdo do diretório corrente, iclusive arquivos/diretórios ocultos
+
+
+[ LOCALIZAR ARQUIVO/DIRETORIO ]
+
+  find <diretório-pai-de-partida> -name <nome-do-arquivo-ou-diretorio>  -->  procura por um dado arquivo/diretório a
+                                                                             partir de um dado diretório de partida.
+                                                                             Exemplo 1 (procurar pelas ocorrências
+                                                                             do arquivo "aula1.txt" a partir do diretório
+                                                                             raiz): "find / -name aula1.txt"
+                                                                             Exemplo 2 (procurar pelas ocorrências
+                                                                             do arquivo "aula1.txt" a partir do diretório
+                                                                             corrente): "find . -name aula1.txt"
+                                                                             Exemplo 3 (procurar pelas ocorrências
+                                                                             do diretorio "docs" a partir do diretório
+                                                                             "/home/"): "find /home/ -name aula1.txt"
+
+                                                                             
+
+
+[ MOVER ARQUIVO/DIRETÓRIO ]                                                              
+  
+  mv <arquivo-ou-diretorio> <diretorio-para-onde-mover> -->   move um arquivo/diretório para um diretorio de destino  (caminho
+                                                              completo ou relativo)
+                                                              Exemplo: "mv aula1.txt /home/tarcisio/docs/"
+
+[ NAVEGAR ]
+
+  cd <caminho-para-a-pasta>     -->   ir para uma nova pasta (pode ser um caminho relativo a partir da pasta corrente)
+                                      Exemplo com caminho completo: "cd /home/tarcisio/docs"
+                                      Exemplo com caminho relativo (se o diretório corrente já for "/home"): "cd tarcisio/docs"
+  cd ..                         -->   voltar para a pasta pai
+  cd /                          -->   ir para a pasta raiz
+
+                                   
+[ REMOVER ARQUIVO/DIRETÓRIO ]
+
+  rm <nome-do-arquivo>          -->   remove um dado arquivo
+                                      Exemplo: "rm aula1.txt"
+  rm -R <nome-do-diretório>     -->   remove um dado diretório com todo o seu conteúdo
+
+                                                         
+  
